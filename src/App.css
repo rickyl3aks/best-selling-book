@@ -8,5 +8,12 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #404447;
+
+  background: linear-gradient(#f1f1f1 50%, rgba(255, 255, 255, 0) 0) 0 0,
+    radial-gradient(circle closest-side, #f1f1f1 53%, rgba(255, 255, 255, 0) 0)
+      0 0,
+    radial-gradient(circle closest-side, #f1f1f1 50%, rgba(255, 255, 255, 0) 0)
+      55px 0 #48b;
+  background-size: 110px 500px;
+  background-repeat: repeat-x;
 }

@@ -1,25 +1,26 @@
 import React, { useState, useEffect } from "react";
-import HomePage from "../HomePage/HomePage";
+import GetGenre from "../GetGenre/GetGenre";
 import axios from "axios";
 
-const url = "https://api.nytimes.com/svc/books/v3/lists/manga.json?api-key=";
+const getGenreUrl =
+  "https://api.nytimes.com/svc/books/v3/lists/names.json?api-key=";
 
 const BooksApi = () => {
-  const [books, setBooks] = useState([]);
+  const [getGenre, setGetGenre] = useState([]);
 
   useEffect(() => {
     const fetchBooks = async () => {
       const res = await axios.get(
-        `${url}${process.env.REACT_APP_BOOKS_KEY_API}`
+        `${getGenreUrl}${process.env.REACT_APP_BOOKS_KEY_API}`
       );
-      setBooks(res.data.results.books);
+      setGetGenre(res.data.results);
     };
     fetchBooks();
   }, []);
 
   return (
     <div>
-      <HomePage books={books} />
+      <GetGenre genre={getGenre} />
     </div>
   );
 };

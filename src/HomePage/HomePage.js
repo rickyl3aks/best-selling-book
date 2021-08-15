@@ -1,10 +1,11 @@
 import React from "react";
 import "./HomePage.css";
 
-const HomePage = ({ books }) => {
+const HomePage = ({ books, name }) => {
   return (
     <div>
-      <h1 className="manga-title">Best Selling Manga -NYT-</h1>
+      <h1 className="book-title">{name}</h1>
+      <small className="small-title">-New York Times-</small>
       <div className="cards">
         {books.map((book) => {
           const {
@@ -15,23 +16,18 @@ const HomePage = ({ books }) => {
             description,
             publisher,
             buy_links,
-            book_image_height,
           } = book;
           return (
             <article key={rank}>
               <div>
                 <div className="img-container">
-                  <img
-                    className={book_image_height > 300 ? "img" : "imgBigger"}
-                    src={book_image}
-                    alt={title}
-                  />
+                  <img className="img" src={book_image} alt={title} />
                   <div className="container">
                     <h1 className="title">{title}</h1>
                     <p className="author">By {author}</p>
                     <p>{description}</p>
                     <p className="small">Publish by {publisher}</p>
-                    <p className="get-links">You can purchase this book at:</p>
+                    <p className="get-books">You can purchase this book at:</p>
                     <ul>
                       {buy_links.map((link) => {
                         const { name, url } = link;
