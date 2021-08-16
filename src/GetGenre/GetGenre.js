@@ -8,7 +8,7 @@ const GetGenre = ({ genre }) => {
   const [books, setBooks] = useState([]);
   const [getName, setGetName] = useState([]);
   const [getGenre, setGetGenre] = useState(false);
-  const [loading, setLoading] = useState(!false);
+  const [loading, setLoading] = useState(false);
 
   const fetchData = async (e) => {
     //close genre menu
@@ -18,16 +18,16 @@ const GetGenre = ({ genre }) => {
     const res = await axios.get(getGenreUrl);
     setBooks(res.data.results.books);
     setGetName(res.data.results.display_name);
-    setLoading(true);
+    setLoading(false);
   };
 
   return (
     <div>
-      <div className="container-card">
-        <p className="btn" onClick={() => setGetGenre(!getGenre)}>
-          Pick a genre
+      <div className="container-card" onClick={() => setGetGenre(!getGenre)}>
+        <p className="btn">Pick a genre</p>
+        <p>
+          <i className={getGenre ? "arrow up" : "arrow down"}></i>
         </p>
-
         {getGenre
           ? genre.map((name) => {
               const { display_name, list_name_encoded } = name;
@@ -41,7 +41,7 @@ const GetGenre = ({ genre }) => {
             })
           : null}
       </div>
-      {loading ? <HomePage books={books} name={getName} /> : <Loading />}
+      {!loading ? <HomePage books={books} name={getName} /> : <Loading />}
     </div>
   );
 };
