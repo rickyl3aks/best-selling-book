@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/best-selling-books/static/css/main.43c3df59.chunk.css",
-    "main.js": "/best-selling-books/static/js/main.3cf42fb3.chunk.js",
-    "main.js.map": "/best-selling-books/static/js/main.3cf42fb3.chunk.js.map",
+    "main.css": "/best-selling-books/static/css/main.469df5e3.chunk.css",
+    "main.js": "/best-selling-books/static/js/main.d4bf5980.chunk.js",
+    "main.js.map": "/best-selling-books/static/js/main.d4bf5980.chunk.js.map",
     "runtime-main.js": "/best-selling-books/static/js/runtime-main.600d2469.js",
     "runtime-main.js.map": "/best-selling-books/static/js/runtime-main.600d2469.js.map",
     "static/js/2.fa708249.chunk.js": "/best-selling-books/static/js/2.fa708249.chunk.js",
     "static/js/2.fa708249.chunk.js.map": "/best-selling-books/static/js/2.fa708249.chunk.js.map",
     "index.html": "/best-selling-books/index.html",
-    "static/css/main.43c3df59.chunk.css.map": "/best-selling-books/static/css/main.43c3df59.chunk.css.map",
-    "static/js/2.fa708249.chunk.js.LICENSE.txt": "/best-selling-books/static/js/2.fa708249.chunk.js.LICENSE.txt"
+    "static/css/main.469df5e3.chunk.css.map": "/best-selling-books/static/css/main.469df5e3.chunk.css.map",
+    "static/js/2.fa708249.chunk.js.LICENSE.txt": "/best-selling-books/static/js/2.fa708249.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/best-selling-books/static/media/bg.6d8099a5.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.600d2469.js",
     "static/js/2.fa708249.chunk.js",
-    "static/css/main.43c3df59.chunk.css",
-    "static/js/main.3cf42fb3.chunk.js"
+    "static/css/main.469df5e3.chunk.css",
+    "static/js/main.d4bf5980.chunk.js"
   ]
 }
