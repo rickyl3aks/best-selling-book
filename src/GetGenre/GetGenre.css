@@ -13,10 +13,13 @@
   text-transform: uppercase;
   font-weight: bold;
   padding: 0 30px;
+  color: #eee;
+  text-shadow: 2px 2px #333;
 }
 
 .arrow {
-  border: solid #333;
+  border: solid #eee;
+  box-shadow: 2px 1px 3px #333;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -26,12 +29,14 @@
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transition: transform 0.4s;
+  -webkit-transition: -webkit-transform 0.4s;
 }
 
 .up {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
   transition: transform 0.4s;
+  -webkit-transition: -webkit-transform 0.4s;
 }
 
 .container-card:hover {
